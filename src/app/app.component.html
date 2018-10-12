@@ -1,0 +1,10 @@
+
+<app-header (hamburgerClick)="onToggleSidebar()"></app-header>
+
+<app-sidebar [isSidebarOpen]='sidebarOpen' (closeSidebar)="onToggleSidebar()"></app-sidebar>
+
+<div id="main-conatiner" class="ui-grid">
+    <router-outlet></router-outlet>
+</div>
+
+<app-footer></app-footer>

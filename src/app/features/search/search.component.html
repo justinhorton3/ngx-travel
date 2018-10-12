@@ -1,0 +1,94 @@
+<section id="search" class="container-center">
+  <p-autoComplete class="item" placeholder="From" formControlName="city" [suggestions]="results" (completeMethod)="search($event)"></p-autoComplete>
+  <p-button class="item" icon="pi pi-arrow-right"></p-button>
+  <p-autoComplete class="item" placeholder="To" formControlName="city" [suggestions]="results" (completeMethod)="search($event)"></p-autoComplete>
+  <p-calendar class="item" placeholder="Date" formControlName="date" [showIcon]="false"></p-calendar>
+  <p-button class="item" icon="pi pi-search"></p-button>
+</section>
+
+<section id="searchResults" class="p-grid">
+  <aside class="p-col-fixed" style="width: 250px;">
+    <h3>Filter</h3>
+
+    <p-accordion [multiple]="true">
+      <p-accordionTab header="Stops">
+        Content 1
+      </p-accordionTab>
+
+      <p-accordionTab header="Times">
+        <p-header>
+          Times
+        </p-header>
+        Content 2
+      </p-accordionTab>
+
+      <p-accordionTab header="Airlines">
+        Content 3
+      </p-accordionTab>
+
+      <p-accordionTab header="Duration">
+        Content 3
+      </p-accordionTab>
+
+      <p-accordionTab header="Price">
+        Content 3
+      </p-accordionTab>
+
+      <p-accordionTab header="Cabin">
+        Content 3
+      </p-accordionTab>
+
+      <p-accordionTab header="Alliance">
+        Content 3
+      </p-accordionTab>
+
+      <p-accordionTab header="Layover Airports">
+        Content 3
+      </p-accordionTab>
+
+      <p-accordionTab header="Flight Quality">
+        Content 3
+      </p-accordionTab>
+
+      <p-accordionTab header="Air Craft">
+        Content 3
+      </p-accordionTab>
+
+      <p-accordionTab header="Booking Site">
+        Content 3
+      </p-accordionTab>
+    </p-accordion>
+  </aside>
+
+  <section class="p-col">
+    <p-card>
+      <p-header>
+        <i class="pi pi-ellipsis-h"></i>
+      </p-header>
+      <img src="/src/assets/images/AA.png" alt="">
+      <p-footer>
+        <p-button class="item" label="Buy Now"></p-button>
+      </p-footer>
+    </p-card>
+
+    <p-card>
+      <p-header>
+        <i class="pi pi-ellipsis-h"></i>
+      </p-header>
+      <img src="/src/assets/images/Dl.png" alt="">
+      <p-footer>
+        <p-button class="item" label="Buy Now"></p-button>
+      </p-footer>
+    </p-card>
+
+    <p-card>
+      <p-header>
+        <i class="pi pi-ellipsis-h"></i>
+      </p-header>
+      <img src="/src/assets/images/AA.png" alt="">
+      <p-footer>
+        <p-button class="item" label="Buy Now"></p-button>
+      </p-footer>
+    </p-card>
+  </section>
+</section>

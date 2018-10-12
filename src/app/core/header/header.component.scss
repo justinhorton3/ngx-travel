@@ -1,0 +1,69 @@
+header {
+    height: 50px;
+    background-color: #fff;
+    border-bottom: thin solid #ddd;
+    margin: 0 -15px; 
+   
+    nav { 
+        // display: flex;
+        // flex-direction: row;
+        // align-items: center;
+
+        a {
+            position: relative;
+            color: inherit;
+        }
+
+        ul { 
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        > * {
+            padding: 0 10px;
+        }
+    }
+
+    .ui-button {
+        background-color: transparent;
+        border: none;
+        color: #000;
+        width: 50px;
+        &:enabled:hover {
+            background-color: transparent;
+            color: #3872ad;
+        }
+    }
+    .brand { 
+        height: 20px;
+        width: auto;
+        // align-self: center; 
+    }
+
+    .active:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid #a9190a;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        right: 0;
+        bottom: -17px;
+        left: 0;
+    }
+
+    ::ng-deep .ui-dropdown { 
+        background-color: transparent;
+        border: none!important;
+        color: inherit;
+        font-family: inherit;
+
+        .ui-dropdown-trigger {
+            right: 20%;
+        }
+    }
+}
