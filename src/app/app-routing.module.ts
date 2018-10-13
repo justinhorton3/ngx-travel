@@ -8,22 +8,22 @@ const routes: Routes = [
   },
   {
     path: 'flights',
-    loadChildren: './features/home/home.module#HomeModule'
+    loadChildren: './features/search/search.module#SearchModule'
   },
   {
     path: 'hotels',
-    loadChildren: './features/home/home.module#HomeModule'
+    loadChildren: './features/search/search.module#SearchModule'
   },
   {
     path: 'cars',
-    loadChildren: './features/home/home.module#HomeModule'
+    loadChildren: './features/search/search.module#SearchModule'
   },
   {
     path: 'blog',
     loadChildren: './features/home/home.module#HomeModule'
   },
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: '**', redirectTo: 'home', pathMatch: 'full' }
+  { path: '', redirectTo: 'flights', pathMatch: 'full' },
+  { path: '**', redirectTo: 'flights', pathMatch: 'full' }
 ];
 
 @NgModule({

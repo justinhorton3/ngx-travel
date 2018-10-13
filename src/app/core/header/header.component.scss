@@ -3,11 +3,10 @@ header {
     background-color: #fff;
     border-bottom: thin solid #ddd;
     margin: 0 -15px; 
+    padding: 0 15px;
    
     nav { 
-        // display: flex;
-        // flex-direction: row;
-        // align-items: center;
+        margin: 0 15px;
 
         a {
             position: relative;
@@ -30,15 +29,23 @@ header {
         border: none;
         color: #000;
         width: 50px;
+        margin-left: -15px;
+
         &:enabled:hover {
             background-color: transparent;
             color: #3872ad;
         }
     }
-    .brand { 
-        height: 20px;
+
+    .circle-img {
+        height: 35px;
         width: auto;
-        // align-self: center; 
+        border-radius: 50%;
+    }
+    
+    .brand img { 
+        height: auto;
+        width: 100px;
     }
 
     .active:after {

@@ -1,33 +1,37 @@
-<header class="p-grid  p-justify-between">
+<header class="p-grid p-nogutter p-align-center">
 
-    <section class="p-col-align-stretch">
-        <button class="p-col hidden-md hidden-lg hidden-xl" type="text" (click)="onhambrugerClick()" pButton cornerStyleClass="none"
-            icon="pi pi-bars"></button>
+    <button class="p-nogutter hidden-md hidden-lg hidden-xl" type="text" 
+        (click)="onhambrugerClick()" 
+        pButton 
+        cornerStyleClass="none"
+        icon="pi pi-bars"></button>
 
-        <div class="p-col brand">
-            <!-- <img src="/assets/images/ngx-travel-logo.png" class="brand" alt="ngx-travel-logo"> -->
-            <span class="title">{{title}}</span>
-        </div>
-    </section>
+    <div class="p-col p-align-center brand">
+        <img src="/assets/images/ngx-travel-logo.png" class="brand" alt="ngx-travel-logo">
+        <!-- <span class="title">{{title}}</span> -->
+    </div>
 
-    <section class="p-col">
-        <!-- <nav class="p-col hidden-xs hidden-sm hidden-md">
-                    <a href="/flights" class="active">Flights</a>
-                    <a href="/hotels">Hotels</a>
-                    <a href="/cars">Cars</a>
-                    <a href="/blog">Blog</a>
-                    <p-dropdown styleClass="header-dropdown" placeholder="More"></p-dropdown>
-        </nav>
-        -->
+    <nav class="hidden-xs hidden-sm">
+        <a href="/flights" class="active">Flights</a>
+        <a href="/hotels">Hotels</a>
+        <a href="/cars">Cars</a>
+        <a href="/blog">Blog</a>
+    </nav>
+
+    <img src="/assets/images/profile.png" class="circle-img" alt="Profile">
+
+    <!-- <section class="p-grid">
+        <
+       
         <nav id="profile" class="p-col p-col-align-end">
-            <!-- <a href="#" class="hidden-sm">Trips</a> -->
-            <img src="/assets/images/profile.png" class="circle-img" alt="Profile">
+            <a href="#" class="hidden-sm">Trips</a> -->
+            <!-- <img src="/assets/images/profile.png" class="circle-img" alt="Profile"> -->
 
             <!-- <p-dropdown class="hidden-sm" placeholder="User"></p-dropdown> -->
-        </nav>
+        <!-- </nav> -->
 
 
-    </section>
+    <!-- </section> -->
 
 
 

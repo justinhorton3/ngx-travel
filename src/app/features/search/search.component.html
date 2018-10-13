@@ -1,13 +1,13 @@
-<section id="search" class="container-center">
-  <p-autoComplete class="item" placeholder="From" formControlName="city" [suggestions]="results" (completeMethod)="search($event)"></p-autoComplete>
-  <p-button class="item" icon="pi pi-arrow-right"></p-button>
-  <p-autoComplete class="item" placeholder="To" formControlName="city" [suggestions]="results" (completeMethod)="search($event)"></p-autoComplete>
-  <p-calendar class="item" placeholder="Date" formControlName="date" [showIcon]="false"></p-calendar>
-  <p-button class="item" icon="pi pi-search"></p-button>
+<section id="search" class="p-grid">
+  <p-autoComplete class="p-col-12 p-md-6 p-lg-3" placeholder="From" formControlName="city" [suggestions]="results" (completeMethod)="search($event)"></p-autoComplete>
+  <p-button class="p-col-12 p-md-6 p-lg-3" icon="pi pi-arrow-right"></p-button>
+  <p-autoComplete class="p-col-12 p-md-6 p-lg-3" placeholder="To" formControlName="city" [suggestions]="results" (completeMethod)="search($event)"></p-autoComplete>
+  <p-calendar class="p-col-12 p-md-6 p-lg-3" placeholder="Date" formControlName="date" [showIcon]="false"></p-calendar>
+  <p-button class="p-col-12 p-md-6 p-lg-3" icon="pi pi-search"></p-button>
 </section>
 
 <section id="searchResults" class="p-grid">
-  <aside class="p-col-fixed" style="width: 250px;">
+  <aside class="hidden-xs hidden-sm p-col-fixed" style="width: 250px;">
     <h3>Filter</h3>
 
     <p-accordion [multiple]="true">
@@ -61,6 +61,9 @@
   </aside>
 
   <section class="p-col">
+
+      <!-- <p-dropdown optionLabel="name"></p-dropdown> -->
+
     <p-card>
       <p-header>
         <i class="pi pi-ellipsis-h"></i>
@@ -90,5 +93,6 @@
         <p-button class="item" label="Buy Now"></p-button>
       </p-footer>
     </p-card>
+
   </section>
 </section>
